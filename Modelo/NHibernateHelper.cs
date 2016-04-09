@@ -1,9 +1,11 @@
-﻿
+﻿using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
 using Modelo;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Cfg.MappingSchema;
 using NHibernate.Mapping.ByCode;
+using NHibernate.Tool.hbm2ddl;
 using System.Collections.Generic;
 
 namespace Modelo
@@ -11,9 +13,7 @@ namespace Modelo
     public static class NHibernateHelper
     {
         private static ISessionFactory _sessionFactory;
-        private static Configuration _configuration;
-        private static HbmMapping _mapping;
-
+        
         public static ISession OpenSession()
         {
             //Open and return the nhibernate session
@@ -27,56 +27,16 @@ namespace Modelo
                 if (_sessionFactory == null)
                 {
                     //Create the session factory
-                    _sessionFactory = Configuration.BuildSessionFactory();
+                    _sessionFactory = Fluently.Configure()
+                                        .Database(MsSqlConfiguration.MsSql2008.ConnectionString(x => x.FromConnectionStringWithKey("ConexaoBanco")).ShowSql())
+                                        .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(true, true))
+                                        .Mappings(x => x.FluentMappings.Add<ProdutoMap>().Add<CategoriaMap>())
+                                        .BuildSessionFactory();
                 }
                 return _sessionFactory;
             }
         }
 
-        public static Configuration Configuration
-        {
-            get
-            {
-                if (_configuration == null)
-                {
-                    //Create the nhibernate configuration
-                    _configuration = CreateConfiguration();
-                }
-                return _configuration;
-            }
-        }
-
-        public static HbmMapping Mapping
-        {
-            get
-            {
-                if (_mapping == null)
-                {
-                    //Create the mapping
-                    _mapping = CreateMapping();
-                }
-                return _mapping;
-            }
-        }
-
-        private static Configuration CreateConfiguration()
-        {
-            var configuration = new Configuration();
-            //Loads properties from hibernate.cfg.xml
-            configuration.Configure();
-            //Loads nhibernate mappings 
-            configuration.AddDeserializedMapping(Mapping, null);
-
-            return configuration;
-        }
-
-        private static HbmMapping CreateMapping()
-        {
-            var mapper = new ModelMapper();
-            
-            mapper.AddMappings(new List<System.Type> { typeof(ProdutoMap) });
-            
-            return mapper.CompileMappingForAllExplicitlyAddedEntities();
-        }
+        
     }
 }

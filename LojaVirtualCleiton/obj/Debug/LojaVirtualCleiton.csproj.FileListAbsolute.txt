@@ -274,3 +274,6 @@ C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtu
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.csprojResolveAssemblyReference.cache
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.dll
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.pdb
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.dll
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.pdb
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.xml

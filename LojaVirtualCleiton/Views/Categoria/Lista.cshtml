@@ -1,0 +1,23 @@
+﻿@model List<LojaVirtualCleiton.Models.CategoriaViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Lista de  Categorias</h2>
+
+<a href="@Url.Action("Editar","Categoria")"> Novo Categoria</a>
+
+<table>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@Html.ActionLink("Editar", "Editar", "Categoria",new { id = item.Id }, null)</td>
+
+            <td>@Html.ActionLink("Apagar", "Apagar", "Categoria", new { id = item.Id }, null)</td>
+        </tr>
+    }
+
+</table>
+
+
