@@ -1,7 +1,11 @@
-﻿namespace Modelo
+﻿using System;
+
+namespace Modelo
 {
     public class Categoria
     {
-        public string Nome { get; set; }
+        public virtual Guid? Id { get; set; }
+
+        public virtual string Nome { get; set; }
     }
 }
