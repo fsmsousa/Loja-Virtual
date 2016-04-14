@@ -11,6 +11,7 @@ namespace Modelo
 
         public virtual Guid Id { get; set; }
         public virtual Categoria Categoria { get; set; }
+        public virtual Fornecedor Fornecedor { get; set; }
         public virtual string Nome {get; set; }
                 
     }

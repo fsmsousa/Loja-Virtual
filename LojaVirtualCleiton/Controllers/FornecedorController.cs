@@ -11,16 +11,16 @@ using System.Web.Mvc;
 
 namespace LojaVirtualCleiton.Controllers
 {
-    public class CategoriaController : Controller
+    public class FornecedorController : Controller
     {
         public ActionResult Lista()
 
         {
-            var categorias = new Categorias();
+            var fornecedores = new Fornecedores();
 
-            var listaCategorias = categorias.Lista();
+            var listaFornecedores = fornecedores.Lista();
 
-            var lista = Mapper.Map<IList<FornecedorViewModel>>(listaCategorias);
+            var lista = Mapper.Map<IList<FornecedorViewModel>>(listaFornecedores);
 
             return View(lista);     
               
@@ -30,11 +30,11 @@ namespace LojaVirtualCleiton.Controllers
         {
             if(id != null)
             {
-                var categorias = new Categorias();
+                var fornecedores = new Fornecedores();
 
-                var categoria = categorias.Por(id);
+                var fornecedor = fornecedores.Por(id);
 
-                var viewModel = Mapper.Map<FornecedorViewModel>(categoria);
+                var viewModel = Mapper.Map<FornecedorViewModel>(fornecedor);
 
                 return View(viewModel);
             }
@@ -44,9 +44,9 @@ namespace LojaVirtualCleiton.Controllers
 
         public ActionResult Apagar(Guid id)
         {
-                var categorias = new Categorias();
+                var fornecedores = new Fornecedores();
 
-                categorias.Apagar(id);
+                fornecedores.Apagar(id);
 
                 return RedirectToAction("Lista");
 
@@ -58,9 +58,9 @@ namespace LojaVirtualCleiton.Controllers
         {
             if (ModelState.IsValid)
             {
-                var categorias = new Categorias();
-                var categoria = Mapper.Map<Categoria>(viewModel);
-                categorias.Salvar(categoria);
+                var fornecedores = new Fornecedores();
+                var fornecedor = Mapper.Map<Fornecedor>(viewModel);
+                fornecedores.Salvar(fornecedor);
                 return RedirectToAction("Lista");
             }
 

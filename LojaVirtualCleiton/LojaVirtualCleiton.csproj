@@ -220,6 +220,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FornecedorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
@@ -228,8 +229,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mappers\AutoMapperConfig.cs" />
+    <Compile Include="Mappers\FornecedorViewModelMappingProfile.cs" />
     <Compile Include="Mappers\CategoriaViewModelMappingProfile.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FornecedorViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\CategoriaViewModel.cs" />
@@ -307,6 +310,8 @@
     <Content Include="Views\Produto\Editar.cshtml" />
     <Content Include="Views\Categoria\Editar.cshtml" />
     <Content Include="Views\Categoria\Lista.cshtml" />
+    <Content Include="Views\Fornecedor\Editar.cshtml" />
+    <Content Include="Views\Fornecedor\Lista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -177,6 +177,7 @@ C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleit
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Iesi.Collections.xml
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\NHibernate.xml
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\hibernate.cfg.xml
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.csprojResolveAssemblyReference.cache
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\ApplicationInsights.config
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\roslyn\csc.exe
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -235,6 +236,7 @@ C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtu
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\System.Web.WebPages.dll
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\System.Web.WebPages.Razor.dll
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\WebGrease.dll
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.dll
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Modelo.pdb
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\AutoMapper.xml
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Iesi.Collections.xml
@@ -271,9 +273,7 @@ C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtu
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.csprojResolveAssemblyReference.cache
-C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.dll
-C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.pdb
-C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.dll
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.pdb
 C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\FluentNHibernate.xml
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.dll
+C:\Users\LAB-108-03\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\obj\Debug\LojaVirtualCleiton.pdb

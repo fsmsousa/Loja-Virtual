@@ -32,6 +32,15 @@
     </div>
 
     <div class="form-group">
+        @Html.LabelFor(m => m.Fornecedor, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.Fornecedor.Id,
+                                   new SelectList(Model.Fornecedores, "Id", "Nome"),
+                                   new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Salvar" />
         </div>

@@ -1,0 +1,23 @@
+﻿@model List<LojaVirtualCleiton.Models.FornecedorViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Lista de  Fornecedors</h2>
+
+<a href="@Url.Action("Editar","Fornecedor")"> Novo Fornecedor</a>
+
+<table>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@Html.ActionLink("Editar", "Editar", "Fornecedor",new { id = item.Id }, null)</td>
+
+            <td>@Html.ActionLink("Apagar", "Apagar", "Fornecedor", new { id = item.Id }, null)</td>
+        </tr>
+    }
+
+</table>
+
+

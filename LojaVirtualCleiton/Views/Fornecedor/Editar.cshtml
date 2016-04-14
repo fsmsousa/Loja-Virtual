@@ -1,0 +1,46 @@
+﻿
+@model LojaVirtualCleiton.Models.FornecedorViewModel
+@{ 
+    ViewBag.Title = Model == null || Model.Id == null ? "Novo Fornecedor" : "Editando Fornecedor";
+}
+
+<h2>@(Model == null || Model.Id == null ? "Novo" : "Editando") Fornecedor</h2>
+
+@using (Html.BeginForm("Editar", "Fornecedor", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Criar novo categoria</h4>
+    <hr />
+
+    @Html.HiddenFor(model => model.Id)
+
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Nome, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Endereço, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Endereço, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cidade, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Cidade, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Salvar" />
+        </div>
+    </div>
+}
+
+

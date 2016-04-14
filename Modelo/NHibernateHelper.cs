@@ -30,7 +30,7 @@ namespace Modelo
                     _sessionFactory = Fluently.Configure()
                                         .Database(MsSqlConfiguration.MsSql2008.ConnectionString(x => x.FromConnectionStringWithKey("ConexaoBanco")).ShowSql())
                                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(true, true))
-                                        .Mappings(x => x.FluentMappings.Add<ProdutoMap>().Add<CategoriaMap>())
+                                        .Mappings(x => x.FluentMappings.Add<ProdutoMap>().Add<CategoriaMap>().Add<FornecedorMap>())
                                         .BuildSessionFactory();
                 }
                 return _sessionFactory;

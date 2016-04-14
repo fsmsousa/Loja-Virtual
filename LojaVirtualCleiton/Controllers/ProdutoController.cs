@@ -48,6 +48,12 @@ namespace LojaVirtualCleiton.Controllers
             var ListaCategorias = categorias.Lista();
 
             viewModel.Categorias = Mapper.Map<IList<CategoriaViewModel>>(ListaCategorias);
+       
+            var fornecedores = new Fornecedores();
+
+            var ListaFornecedores = fornecedores.Lista();
+
+            viewModel.Fornecedores = Mapper.Map<IList<FornecedorViewModel>>(ListaFornecedores);
 
             return View(viewModel);
         }
@@ -84,6 +90,12 @@ namespace LojaVirtualCleiton.Controllers
             var ListaCategorias = categorias.Lista();
 
             viewModel.Categorias = Mapper.Map<IList<CategoriaViewModel>>(ListaCategorias);
+
+            var fornecedores = new Fornecedores();
+
+            var ListaFornecedores = fornecedores.Lista();
+
+            viewModel.Fornecedores = Mapper.Map<IList<FornecedorViewModel>>(ListaCategorias);
 
             return View(viewModel);
         }

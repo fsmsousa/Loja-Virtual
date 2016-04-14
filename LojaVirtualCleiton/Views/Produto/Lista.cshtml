@@ -13,8 +13,10 @@
         <tr>
             <td>@item.Nome</td>
             <td>@item.Categoria</td>
+            <td>@item.Fornecedor</td>
             <td>@Html.ActionLink("Editar", "Editar", "Produto",new { id = item.Id }, null)</td>
             <td>@Html.ActionLink("Apagar", "Apagar", "Produto", new { id = item.Id }, null)</td>
+           
         </tr>
     }
 
